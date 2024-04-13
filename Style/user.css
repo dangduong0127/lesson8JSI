@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #f0f2f5;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+.user-avatar {
+  text-align: center;
+}
+.user-avatar > h1 {
+  margin-bottom: 0;
+}
+.user-avatar > p {
+  margin-top: 0;
+}
+
+.upload {
+  width: 100px;
+  position: relative;
+  margin: auto;
+}
+
+.upload img {
+  border-radius: 50%;
+  border: 6px solid #eaeaea;
+  object-fit: cover;
+}
+
+.upload .round {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #00b4ff;
+  width: 32px;
+  height: 32px;
+  line-height: 33px;
+  text-align: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.upload .round input[type="file"] {
+  position: absolute;
+  transform: scale(2);
+  opacity: 0;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  cursor: pointer;
+}
+
+#user-form {
+  width: 400px;
+  height: auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5%;
+}
+.form-content > label {
+  font-weight: bold;
+}
+.form-content > input {
+  margin-top: 5px;
+  border: none;
+  padding: 5px;
+  border-bottom: 1px solid #00b4ff;
+  width: 100%;
+}
+.form-content > input:focus {
+  outline: none;
+}
+.btn-submit {
+  height: 30px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  background-color: #00b4ff;
+  cursor: pointer;
+}

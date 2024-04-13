@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/98638255fc.js" crossorigin="anonymous"></script>
+    <title>Login</title>
+    <link rel="stylesheet" href="../Style/style.css">
+    <link rel="stylesheet" href="../Style/mobile.css">
+</head>
+
+<body>
+    <nav>
+        <div class="btn-bars"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></div>
+        <a href="../index.html" class="nav-item">Home</a>
+        <a href="#" class="nav-item">Members</a>
+        <a href="#" class="nav-item">Contact</a>
+        <a href="#" class="nav-item">About</a>
+    </nav>
+
+    <div class="container">
+        <form id="login-form">
+            <p>Login</p>
+            <hr>
+            <div class="avatar"><img
+                    src="https://vnn-imgs-a1.vgcloud.vn/image1.ictnews.vn/_Files/2020/03/17/trend-avatar-1.jpg" alt="">
+            </div>
+            <div class="input-content">
+                <div class="inner-ip">
+                    <div class="email inputform"><i class="fa-solid fa-at"></i><input name="email" type="text"
+                            placeholder="Email">
+                    </div>
+                    <div class="password inputform"><i class="fa-solid fa-lock"></i></i><input name="password"
+                            type="password" placeholder="Password">
+                    </div>
+                </div>
+            </div>
+            <button class="btn-submit">Sign in</button>
+            <p>Haven't got an account? <a href="register.html">Register</a></p>
+        </form>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-firestore.js"></script>
+    <script src="../JS/config.js"></script>
+    <script src="../JS/login.js"></script>
+</body>
+
+</html>
